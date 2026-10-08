@@ -25,8 +25,6 @@ public class WasmtimeValueTest {
                 WasmtimeLinker linker = new WasmtimeLinker(engine, store);
 
         ) {
-            linker.linkContext(new WasiPI1Context());
-
             try (WasmtimeInstance instance = new WasmtimeInstance(store, module, linker)) {
                 // I32
                 {
